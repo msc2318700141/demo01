@@ -38,7 +38,9 @@ class KengContent extends StatelessWidget{
                   color:Colors.black,
                   size:20,
                 ), 
-                onPressed: null
+                onPressed: (){
+                  Navigator.pop(context);
+                }
               )
             ],)
         ),
