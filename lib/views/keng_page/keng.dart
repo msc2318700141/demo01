@@ -23,10 +23,23 @@ class KengContent extends StatelessWidget{
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               IconButton(
-                icon: null,
-                onPressed: null
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                icon: Icon(
+                  Icons.close,
+                  color: Colors.grey,
+                  size: 28,
+                ),
               ),
-              IconButton(icon: null, onPressed: null)
+              IconButton(
+                icon: Icon(
+                  Icons.close,
+                  color:Colors.black,
+                  size:20,
+                ), 
+                onPressed: null
+              )
             ],)
         ),
         Container(
