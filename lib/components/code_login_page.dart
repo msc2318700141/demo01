@@ -275,7 +275,7 @@ class _MicroCodeLoginState extends State<MicroCodeLogin> {
                   contentPadding: EdgeInsets.all(3),
                   labelText: "手机号",
                   hintText: "您的手机号",
-//                  prefixIcon: Icon(Icons.person),
+//                  : Icon(Icons.person),
                 ),
               ),
               MicroVerifyCodeField(

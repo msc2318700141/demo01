@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 class KengPage extends StatefulWidget{
   @override
@@ -17,41 +19,54 @@ class KengContent extends StatelessWidget{
     return Column(
       children: <Widget>[
         Padding(
-          padding: const EdgeInsets.only(left: 10, top: 10),
-          child: Text("推荐话题"),
-        ),
-        Container(
-            constraints: BoxConstraints(
-              minWidth: 100,
-              minHeight: 200
-            ),
-          ),
-          Text(
-            "we",
-            softWrap: false,
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-            style: TextStyle(color: Colors.black, fontSize: 16),
-          ),
-          Row(
+          padding: EdgeInsets.symmetric(horizontal:10),
+          child:Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              Image.network(
-                "wqd",
-                width: 20,
-                height: 20,
+              IconButton(
+                icon: null,
+                onPressed: null
               ),
-              Text("3"),
-              Expanded(
-                child: SizedBox(),
+              IconButton(icon: null, onPressed: null)
+            ],)
+        )
+        SizedBox(height:5,),
+        Container(
+          padding: EdgeInsets.only(left:22),
+          alignment: Alignment.centerLeft,
+          child:Text(
+            '配送至',
+            style:TextStyle(
+              fontSize: 16,
+              color: Colors.black45,
+              fontWeight: FontWeight.w500,
+              letterSpacing: 1
+            ),
+          )
+        ),
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal:22),
+          child:Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: <Widget>[
+              Icon(
+                null,
+                size:15
               ),
-              // LikeButton(
-              //   direction: Axis.horizontal,
-              //   num: 1,
-              // ),
+              Text(
+                '当前位置',
+                style:TextStyle(
+                  fontSize: 16,
+                  color: Colors.black,
+                  fontWeight: FontWeight.w700,
+                  letterSpacing: 1
+                )
+              )
             ],
-          ),
-        ],
-      );
+          )
+        )
+      ],
+    );
   }
 }
 
