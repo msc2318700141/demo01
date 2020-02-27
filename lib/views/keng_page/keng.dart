@@ -44,10 +44,10 @@ class KengContent extends StatelessWidget{
               Expanded(
                 child: SizedBox(),
               ),
-              LikeButton(
-                direction: Axis.horizontal,
-                num: 1,
-              ),
+              // LikeButton(
+              //   direction: Axis.horizontal,
+              //   num: 1,
+              // ),
             ],
           ),
         ],
