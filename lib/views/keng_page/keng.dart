@@ -29,8 +29,7 @@ class KengContent extends StatelessWidget{
               ),
               IconButton(icon: null, onPressed: null)
             ],)
-        )
-        SizedBox(height:5,),
+        ),
         Container(
           padding: EdgeInsets.only(left:22),
           alignment: Alignment.centerLeft,
