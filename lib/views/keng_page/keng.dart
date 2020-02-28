@@ -11,39 +11,6 @@ class KengState extends State<KengPage>{
   Widget build(BuildContext context) {
     return Scaffold(
       body:KengContent(),
-      floatingActionButton: FloatingActionButton(
-        onPressed: (){},
-        child:Icon(
-          Icons.add,
-          color:Colors.white,
-        )
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      bottomNavigationBar:BottomNavigationBar(
-        items:[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            title:Text('首页')
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            title:Text('购买')
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            title:Text('购买')
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.category),
-            title:Text('坑')
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            title:Text('我的')
-          )
-        ],
-        type:BottomNavigationBarType.fixed,
-      ),
     );
   }
 }

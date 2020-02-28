@@ -11,18 +11,56 @@ class AppState extends State<App>{
   @override 
   Widget build(BuildContext context){
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Flutter企业实战'),
-        leading: Icon(Icons.home),
+      appBar: MicroAppBar(
+        elevation: 0,
+        title: MicroSearchField(
+          //controller: tagController,
+//          onTap: _jumpToSearch,
+        //  onSubmitted: _onSubmitted,
+          enabled: true,
+        ),
+        automaticallyImplyLeading: false,
         actions: <Widget>[
-          Padding(
-            padding: EdgeInsets.only(right:20.0),
-            child:GestureDetector(
-              onTap:(){},
-              child:Icon(Icons.search)
-            )
+          FlatButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+            child: Text("取消"),
           )
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        child:Icon(
+          Icons.add,
+          color:Colors.white,
+        )
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      bottomNavigationBar:BottomNavigationBar(
+        items:[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            title:Text('首页')
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            title:Text('购买')
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            title:Text('购买')
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.category),
+            title:Text('坑')
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            title:Text('我的')
+          )
+        ],
+        type:BottomNavigationBarType.fixed,
       ),
     );
     // return MaterialApp(
