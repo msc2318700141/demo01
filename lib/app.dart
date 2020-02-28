@@ -11,24 +11,7 @@ class AppState extends State<App>{
   @override 
   Widget build(BuildContext context){
     return Scaffold(
-      appBar: MicroAppBar(
-        elevation: 0,
-        title: MicroSearchField(
-          //controller: tagController,
-//          onTap: _jumpToSearch,
-        //  onSubmitted: _onSubmitted,
-          enabled: true,
-        ),
-        automaticallyImplyLeading: false,
-        actions: <Widget>[
-          FlatButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-            child: Text("取消"),
-          )
-        ],
-      ),
+      
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
         child:Icon(
