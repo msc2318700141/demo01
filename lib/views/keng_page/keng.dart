@@ -19,24 +19,24 @@ class KengContent extends StatelessWidget{
   Widget build(BuildContext context) {
     //double itemWidth = deviceWidth * 168.5 / 360;
     //double imageWidth = deviceWidth * 110.0 / 360;
-    List<Widget> listWidgets = productItemData.map((i){
-      return Container(
-        margin:EdgeInsets.only(bottom:5,left:2),
-        padding: EdgeInsets.only(top:10,left:13,bottom:7),
-        color:Colors.grey,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Text(
-              i.desc,
-              maxLines:1,
-              overflow: TextOverflow.ellipsis,
-            )
+    // List<Widget> listWidgets = productItemData.map((i){
+    //   return Container(
+    //     margin:EdgeInsets.only(bottom:5,left:2),
+    //     padding: EdgeInsets.only(top:10,left:13,bottom:7),
+    //     color:Colors.grey,
+    //     child: Column(
+    //       crossAxisAlignment: CrossAxisAlignment.start,
+    //       children: <Widget>[
+    //         Text(
+    //           i.desc,
+    //           maxLines:1,
+    //           overflow: TextOverflow.ellipsis,
+    //         )
 
-          ],
-        ),
-      );
-    }).toList();
+    //       ],
+    //     ),
+    //   );
+    // }).toList();
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
@@ -101,7 +101,72 @@ class KengContent extends StatelessWidget{
         ),
         Wrap(
           spacing: 2,
-          children:listWidgets,
+          children: <Widget>[
+            Container(
+              margin:EdgeInsets.only(bottom:5,left:2),
+              padding: EdgeInsets.only(top:10,left:13,bottom:7),
+              color:Colors.grey,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    'desc',
+                    maxLines:1,
+                    overflow: TextOverflow.ellipsis,
+                  )
+
+                ],
+              ),
+            ),
+            Container(
+              margin:EdgeInsets.only(bottom:5,left:2),
+              padding: EdgeInsets.only(top:10,left:13,bottom:7),
+              color:Colors.grey,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    'desc',
+                    maxLines:1,
+                    overflow: TextOverflow.ellipsis,
+                  )
+
+                ],
+              ),
+            ),
+            Container(
+              margin:EdgeInsets.only(bottom:5,left:2),
+              padding: EdgeInsets.only(top:10,left:13,bottom:7),
+              color:Colors.grey,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    'desc',
+                    maxLines:1,
+                    overflow: TextOverflow.ellipsis,
+                  )
+
+                ],
+              ),
+            ),
+            Container(
+              margin:EdgeInsets.only(bottom:5,left:2),
+              padding: EdgeInsets.only(top:10,left:13,bottom:7),
+              color:Colors.grey,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    'desc',
+                    maxLines:1,
+                    overflow: TextOverflow.ellipsis,
+                  )
+
+                ],
+              ),
+            )
+          ],
         ),
         Container(
           padding: EdgeInsets.only(left:22),
