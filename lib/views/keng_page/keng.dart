@@ -26,14 +26,22 @@ class KengState extends State<KengPage>{
             title:Text('首页')
           ),
           BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            title:Text('购买')
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+          ),
+          BottomNavigationBarItem(
             icon: Icon(Icons.category),
-            title:Text('首页')
+            title:Text('坑')
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
-            title:Text('首页')
+            title:Text('我的')
           )
-        ]
+        ],
+        type:BottomNavigationBarType.fixed,
       ),
     );
   }
@@ -42,13 +50,13 @@ class KengContent extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Padding(
-          padding: EdgeInsets.only(),
+          padding: EdgeInsets.all(6),
           child: Container(
             width:343,
             height: 34,
-            alignment: Alignment.center,
             decoration: BoxDecoration(
               boxShadow:[
                 BoxShadow(

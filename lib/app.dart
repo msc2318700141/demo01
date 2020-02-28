@@ -12,25 +12,7 @@ class AppState extends State<App>{
   Widget build(BuildContext context){
     return MaterialApp(
       title: 'Flutter SDK Demo',
-      // initialRoute: "/",
       theme: ThemeData(
-        platform: TargetPlatform.iOS,
-        primarySwatch: Colors.grey,
-        primaryColor: Colors.redAccent,
-        brightness: Brightness.light,
-        buttonColor: Colors.red,
-        accentColor: Colors.grey,
-        hoverColor: Colors.redAccent,
-        primaryColorBrightness: Brightness.light,
-        appBarTheme: AppBarTheme(
-          brightness: Brightness.light,
-          color: Colors.white,
-        ),
-        focusColor: Colors.redAccent,
-        buttonTheme: ButtonThemeData(
-          textTheme: ButtonTextTheme.primary,
-          buttonColor: Colors.redAccent,
-        ),
         textTheme: TextTheme(
             button: TextStyle(
           color: Colors.white,
