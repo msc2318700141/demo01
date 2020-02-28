@@ -10,15 +10,16 @@ class AppState extends State<App>{
   RecentHot recentHot;
   @override 
   Widget build(BuildContext context){
-    return MaterialApp(
-      title: 'Flutter SDK Demo',
-      theme: ThemeData(
-        textTheme: TextTheme(
-            button: TextStyle(
-          color: Colors.white,
-        )),
-      ),
-      home: KengPage(),
-    );
+    return Text('App');
+    // return MaterialApp(
+    //   title: 'Flutter SDK Demo',
+    //   theme: ThemeData(
+    //     textTheme: TextTheme( 
+    //         button: TextStyle(
+    //       color: Colors.white,
+    //     )),
+    //   ),
+    //   home: KengPage(),
+    // );
   }
 }
