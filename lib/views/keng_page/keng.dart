@@ -1,5 +1,6 @@
 
 import 'package:demo01/components/popular/popular_item.dart';
+import 'package:demo01/model/data.dart';
 import 'package:flutter/material.dart';
 import 'package:demo01/components/popular/popular_card.dart';
 //import '../../model/data.dart';
@@ -18,7 +19,7 @@ class KengContent extends StatelessWidget{
   Widget build(BuildContext context) {
     //double itemWidth = deviceWidth * 168.5 / 360;
     //double imageWidth = deviceWidth * 110.0 / 360;
-    List<Widget> listWidgets = popularItemData.map((i){
+    List<Widget> listWidgets = productItemData.map((i){
       return Container(
         margin:EdgeInsets.only(bottom:5,left:2),
         padding: EdgeInsets.only(top:10,left:13,bottom:7),
@@ -27,7 +28,7 @@ class KengContent extends StatelessWidget{
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              '1',
+              i.desc,
               maxLines:1,
               overflow: TextOverflow.ellipsis,
             )
