@@ -2,11 +2,10 @@
 import 'package:demo01/components/popular/popular_item.dart';
 import 'package:flutter/material.dart';
 import 'package:demo01/components/popular/popular_card.dart';
-class KengPage extends StatefulWidget{
-  @override
-  KengState createState() => KengState();
-}
-class KengState extends State<KengPage>{  
+//import '../../model/data.dart';
+class KengPage extends StatelessWidget{
+  //final ProductListModal list;
+  //KengPage(this.list);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,6 +16,26 @@ class KengState extends State<KengPage>{
 class KengContent extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
+    //double itemWidth = deviceWidth * 168.5 / 360;
+    //double imageWidth = deviceWidth * 110.0 / 360;
+    List<Widget> listWidgets = popularItemData.map((i){
+      return Container(
+        margin:EdgeInsets.only(bottom:5,left:2),
+        padding: EdgeInsets.only(top:10,left:13,bottom:7),
+        color:Colors.grey,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              '1',
+              maxLines:1,
+              overflow: TextOverflow.ellipsis,
+            )
+
+          ],
+        ),
+      );
+    }).toList();
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
@@ -78,6 +97,10 @@ class KengContent extends StatelessWidget{
               letterSpacing: 1
             )
           ),
+        ),
+        Wrap(
+          spacing: 2,
+          children:listWidgets,
         ),
         Container(
           padding: EdgeInsets.only(left:22),
