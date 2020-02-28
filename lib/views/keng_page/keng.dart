@@ -31,6 +31,7 @@ class KengState extends State<KengPage>{
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
+            title:Text('购买')
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.category),
