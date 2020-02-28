@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'popular_item.dart';
+import 'popular_item.dart';       
 class PopularCard extends StatelessWidget{
   final PopularItem popularItem;
   PopularCard({this.popularItem});

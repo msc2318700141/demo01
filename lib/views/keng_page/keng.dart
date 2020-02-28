@@ -10,7 +10,31 @@ class KengState extends State<KengPage>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:KengContent()
+      body:KengContent(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        child:Icon(
+          Icons.add,
+          color:Colors.white,
+        )
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      bottomNavigationBar:BottomNavigationBar(
+        items:[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            title:Text('首页')
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.category),
+            title:Text('首页')
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            title:Text('首页')
+          )
+        ]
+      ),
     );
   }
 }
