@@ -7,10 +7,24 @@ class App extends StatefulWidget{
 }
 class AppState extends State<App>{
   //var _currentIndex = 0;
-  RecentHot recentHot;
+  //RecentHot recentHot;
   @override 
   Widget build(BuildContext context){
-    return Text('App');
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Flutter企业实战'),
+        leading: Icon(Icons.home),
+        actions: <Widget>[
+          Padding(
+            padding: EdgeInsets.only(right:20.0),
+            child:GestureDetector(
+              onTap:(){},
+              child:Icon(Icons.search)
+            )
+          )
+        ],
+      ),
+    );
     // return MaterialApp(
     //   title: 'Flutter SDK Demo',
     //   theme: ThemeData(
