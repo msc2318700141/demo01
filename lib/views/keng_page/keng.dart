@@ -215,7 +215,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
         Container(
           padding: EdgeInsets.only(top:20,left:16,right:16,bottom:20),
           margin: EdgeInsets.only(top:20,bottom:20),
-          decoration: BoxDecoration(color: Colors.white),
+          decoration: BoxDecoration(color: Colors.red),
           child:Column(children: <Widget>[
             Container(
               child:Row(
