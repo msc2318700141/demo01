@@ -138,7 +138,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
             ),
             Container(
               width: itemWidth,
-              margin:EdgeInsets.only(bottom:5,left:2),
+              margin:EdgeInsets.only(bottom:5,left:10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 color:Colors.yellow,
@@ -152,7 +152,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
                     maxLines:1,
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
-                      color: Colors.red,
+                      color: Colors.white,
                       
                     ),
                   )
@@ -162,7 +162,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
             ),
             Container(
               width: itemWidth,
-              margin:EdgeInsets.only(bottom:5,left:2),
+              margin:EdgeInsets.only(bottom:5,left:10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 color:Colors.yellow,
@@ -185,7 +185,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
             ),
             Container(
               width: itemWidth,
-              margin:EdgeInsets.only(bottom:5,left:2),
+              margin:EdgeInsets.only(bottom:5,left:10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 color:Colors.yellow,
