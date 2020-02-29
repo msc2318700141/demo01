@@ -151,7 +151,8 @@ class KengContent extends StatelessWidget{
               ),
             ),
             Container(
-              margin:EdgeInsets.only(bottom:5,left:2),;              padding: EdgeInsets.only(top:10,left:13,bottom:7),
+              margin:EdgeInsets.only(bottom:5,left:2),
+              padding: EdgeInsets.only(top:10,left:13,bottom:7),
               color:Colors.grey,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
