@@ -113,16 +113,17 @@ Widget kengContent(BuildContext context,double deviceWidth){
               width: itemWidth,
               height:2*itemWidth/5,
               
-              margin:EdgeInsets.only(bottom:5,left:2),
+              margin:EdgeInsets.only(bottom:5,left:10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 color:Colors.yellow,
                 
               ),
               child: Stack(
+                alignment: const FractionalOffset(0.1, 0.9),
                 children: <Widget>[
-                  Image.network('assets/images/1.jpg',),
-                  Image.asset('assets/images/1.jpg',width: itemWidth,height:2*itemWidth/5 ,fit: BoxFit.fill,),
+                  //Image.network('assets/images/1.jpg',),
+                  Image.asset('assets/images/1.jpg',width: itemWidth,height:2*itemWidth/5 ,fit: BoxFit.cover,),
                   Text(
                     '盲盒大作战',
                     maxLines:1,
@@ -145,7 +146,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
               child: Stack(
                 alignment: const FractionalOffset(0.1, 0.9),
                 children: <Widget>[
-                  Image.asset('assets/images/2.jpg',width: itemWidth,height:2*itemWidth/5 ,),
+                  Image.asset('assets/images/2.jpg',width: itemWidth,height:2*itemWidth/5 ,fit: BoxFit.cover,),
                   Text(
                     '超人手办展',
                     maxLines:1,
@@ -167,8 +168,9 @@ Widget kengContent(BuildContext context,double deviceWidth){
                 color:Colors.yellow,
               ),
               child: Stack(
+                alignment: const FractionalOffset(0.1, 0.9),
                 children: <Widget>[
-                  Image.asset('assets/images/3.jpg',width: itemWidth,height:2*itemWidth/5,),
+                  Image.asset('assets/images/3.jpg',width: itemWidth,height:2*itemWidth/5,fit: BoxFit.cover,),
                   Text(
                     '忍者神坑',
                     maxLines:1,
@@ -189,8 +191,9 @@ Widget kengContent(BuildContext context,double deviceWidth){
                 color:Colors.yellow,
               ),
               child: Stack(
+                alignment: const FractionalOffset(0.1, 0.9),
                 children: <Widget>[
-                  Image.asset('assets/images/2.jpg',width: itemWidth,height:2*itemWidth/5 ,),
+                  Image.asset('assets/images/2.jpg',width: itemWidth,height:2*itemWidth/5 ,fit: BoxFit.cover,),
                   Text(
                     '盲盒大作战',
                     maxLines:1,
@@ -205,18 +208,6 @@ Widget kengContent(BuildContext context,double deviceWidth){
             )
           ],
         ),
-        Container(
-          padding: EdgeInsets.only(left:22),
-          height:100,
-          child:ListView.builder(
-            itemCount: popularItemData.length,
-            itemBuilder: (BuildContext context,int index){
-              return PopularCard(
-                popularItem:popularItemData[index]
-              );
-            }
-          )
-        )
       ],
     );
   }
