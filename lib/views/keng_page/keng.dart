@@ -215,7 +215,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
         Container(
           padding: EdgeInsets.only(top:20,left:16,right:16,bottom:20),
           margin: EdgeInsets.only(top:20,bottom:20),
-          decoration: BoxDecoration(color: Colors.red),
+          decoration: BoxDecoration(color: Colors.white),
           child:Column(children: <Widget>[
 
             Container(
@@ -223,6 +223,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
                 children: <Widget>[
                   Image.asset('assets/images/3.jpg',width: 30,height:30,),
                   Container(
+                    color: Colors.yellow,
                     margin: EdgeInsets.only(left:10),
                     child: Column(children: <Widget>[
                       Container(
