@@ -92,7 +92,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(top:20),
+          padding: EdgeInsets.only(left:5),
           child:Container(
             decoration: BoxDecoration(color: Colors.white),
             child: Text(
@@ -120,7 +120,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
               ),
               child: Stack(
                 children: <Widget>[
-                  Image.asset('assets/images/1.jpg',width: itemWidth,height:2*itemWidth/5 ,),
+                  Image.asset('assets/images/1.jpg',width: itemWidth,height:2*itemWidth/5 ,fit: BoxFit.cover,),
                   Text(
                     '盲盒大作战',
                     maxLines:1,
