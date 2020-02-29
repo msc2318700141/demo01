@@ -114,12 +114,10 @@ Widget kengContent(BuildContext context,double deviceWidth){
             Container(
               width: itemWidth,
               height:2*itemWidth/5,
-              
               margin:EdgeInsets.only(bottom:5,left:10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 color:Colors.yellow,
-                
               ),
               child: Stack(
                 alignment: const FractionalOffset(0.1, 0.9),
@@ -137,6 +135,9 @@ Widget kengContent(BuildContext context,double deviceWidth){
 
                 ],
               ),
+              // onPressed:(){
+              //   Navigator.push(context,MaterialPageRoute(builder: (context)=>SecondScreen())
+              // },
             ),
             Container(
               width: itemWidth,
