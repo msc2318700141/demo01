@@ -103,14 +103,14 @@ Widget kengContent(BuildContext context,double deviceWidth){
           spacing: 2,
           children: <Widget>[
             Container(
-              width: deviceWidth,
+              width: itemWidth,
               margin:EdgeInsets.only(bottom:5,left:2),
               padding: EdgeInsets.only(top:10,left:13,bottom:7),
               color:Colors.grey,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Image.asset('images/1.jpg',width: imageWidth,height:imageWidth ,),
+                  Image.asset('assets/images/1.jpg',width: imageWidth,height:imageWidth ,),
                   Text(
                     'descyututututuyvuyuyu',
                     maxLines:1,
@@ -121,7 +121,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
               ),
             ),
             Container(
-              width: deviceWidth,
+              width: itemWidth,
               margin:EdgeInsets.only(bottom:5,left:2),
               padding: EdgeInsets.only(top:10,left:13,bottom:7),
               color:Colors.grey,
@@ -138,7 +138,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
               ),
             ),
             Container(
-              width: deviceWidth,
+              width: itemWidth,
               margin:EdgeInsets.only(bottom:5,left:2),
               padding: EdgeInsets.only(top:10,left:13,bottom:7),
               color:Colors.grey,
@@ -155,7 +155,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
               ),
             ),
             Container(
-              width: deviceWidth,
+              width: itemWidth,
               margin:EdgeInsets.only(bottom:5,left:2),
               padding: EdgeInsets.only(top:10,left:13,bottom:7),
               color:Colors.grey,
