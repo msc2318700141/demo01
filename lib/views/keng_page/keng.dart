@@ -215,7 +215,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
             Container(
                   child:Row(
                     children: <Widget>[
-                      Image.asset('assets/images/3.jpg',width: itemWidth,height:2*itemWidth/5,fit: BoxFit.cover,),
+                      Image.asset('assets/images/3.jpg',width: 30,height:30),
                       Container(
                         child: Column(children: <Widget>[
                           Container(
