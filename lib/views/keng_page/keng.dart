@@ -94,7 +94,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
         ),
         Container(
           decoration: BoxDecoration(color: Colors.white),
-          padding: EdgeInsets.only(left:10),
+          padding: EdgeInsets.only(left:10,bottom: 10),
           child: Text(
           '近期热门',
             textAlign: TextAlign.left,
@@ -213,8 +213,8 @@ Widget kengContent(BuildContext context,double deviceWidth){
         ),
         
         Container(
-          padding: EdgeInsets.only(top:20,bottom:20,left: 20),
-          margin: EdgeInsets.only(top:20,bottom:20),
+          padding: EdgeInsets.only(top:20,bottom:20,left: 10),
+          margin: EdgeInsets.only(top:10,bottom:10),
           decoration: BoxDecoration(color: Colors.white),
           child:Column(children: <Widget>[
 
@@ -224,7 +224,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
                   Image.asset('assets/images/3.jpg',width: 49,height:49,),
 
                   Container(
-                    width: 300,
+                    width: 320,
                     margin: EdgeInsets.only(left:10),
                     child: Column(children: <Widget>[
                       Container(
@@ -274,7 +274,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
                   Image.asset('assets/images/3.jpg',width: 49,height:49,),
 
                   Container(
-                    width: 300,
+                    width: 320,
                     margin: EdgeInsets.only(left:10),
                     child: Column(children: <Widget>[
                       Container(
@@ -324,7 +324,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
                   Image.asset('assets/images/3.jpg',width: 49,height:49,),
 
                   Container(
-                    width: 300,
+                    width: 320,
                     margin: EdgeInsets.only(left:10),
                     child: Column(children: <Widget>[
                       Container(
