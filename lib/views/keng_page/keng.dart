@@ -9,16 +9,17 @@ class KengPage extends StatelessWidget{
   //KengPage(this.list);
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body:KengContent(),
+    double deviceWidth = MediaQuery.of(context).size.width;
+    return Container(
+      width: deviceWidth,
+      color: Colors.white,
+      child:kengContent(context,deviceWidth),
     );
   }
 }
-class KengContent extends StatelessWidget{
-  @override
-  Widget build(BuildContext context) {
-    //double itemWidth = deviceWidth * 168.5 / 360;
-    //double imageWidth = deviceWidth * 110.0 / 360;
+Widget kengContent(BuildContext context,double deviceWidth){
+    double itemWidth = deviceWidth * 168.5 / 360;
+    double imageWidth = deviceWidth * 110.0 / 360;
     // List<Widget> listWidgets = productItemData.map((i){
     //   return Container(
     //     margin:EdgeInsets.only(bottom:5,left:2),
@@ -43,7 +44,6 @@ class KengContent extends StatelessWidget{
         Padding(
           padding: EdgeInsets.all(6),
           child: Container(
-            width:343,
             height: 34,
             decoration: BoxDecoration(
               boxShadow:[
@@ -103,13 +103,14 @@ class KengContent extends StatelessWidget{
           spacing: 2,
           children: <Widget>[
             Container(
+              width: deviceWidth,
               margin:EdgeInsets.only(bottom:5,left:2),
               padding: EdgeInsets.only(top:10,left:13,bottom:7),
               color:Colors.grey,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Image.asset('images/1.jpg'),
+                  Image.asset('images/1.jpg',width: imageWidth,height:imageWidth ,),
                   Text(
                     'descyututututuyvuyuyu',
                     maxLines:1,
@@ -120,6 +121,7 @@ class KengContent extends StatelessWidget{
               ),
             ),
             Container(
+              width: deviceWidth,
               margin:EdgeInsets.only(bottom:5,left:2),
               padding: EdgeInsets.only(top:10,left:13,bottom:7),
               color:Colors.grey,
@@ -136,6 +138,7 @@ class KengContent extends StatelessWidget{
               ),
             ),
             Container(
+              width: deviceWidth,
               margin:EdgeInsets.only(bottom:5,left:2),
               padding: EdgeInsets.only(top:10,left:13,bottom:7),
               color:Colors.grey,
@@ -152,6 +155,7 @@ class KengContent extends StatelessWidget{
               ),
             ),
             Container(
+              width: deviceWidth,
               margin:EdgeInsets.only(bottom:5,left:2),
               padding: EdgeInsets.only(top:10,left:13,bottom:7),
               color:Colors.grey,
@@ -184,5 +188,4 @@ class KengContent extends StatelessWidget{
       ],
     );
   }
-}
 
