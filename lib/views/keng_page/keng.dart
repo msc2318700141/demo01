@@ -211,10 +211,8 @@ Widget kengContent(BuildContext context,double deviceWidth){
         ),
         Container(
           margin: EdgeInsets.only(top:20,bottom:20),
-          child:Container(
-            child:ListView(
-              children: <Widget>[
-                Container(
+          child:Column(children: <Widget>[
+            Container(
                   child:Row(
                     children: <Widget>[
                       Image.asset('assets/images/3.jpg',width: itemWidth,height:2*itemWidth/5,fit: BoxFit.cover,),
@@ -349,12 +347,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
                     ],
                   )
                 )
-              ],
-
-
-
-            ),
-          )
+          ],)
         ),
       ],
     );
