@@ -13,7 +13,7 @@ class KengPage extends StatelessWidget{
     return Container(
       width: deviceWidth,
       decoration: BoxDecoration(
-        color: Colors.grey,
+        color: Color(0xFFF8F8F8),
 
       ),
       
@@ -97,7 +97,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
             '近期热门',
             textAlign: TextAlign.left,
             style:TextStyle(
-              fontSize: 30,
+              fontSize: 20,
               color:Colors.black,
               letterSpacing: 1
             )
@@ -108,11 +108,11 @@ Widget kengContent(BuildContext context,double deviceWidth){
           children: <Widget>[
             Container(
               width: itemWidth,
+              height:itemWidth/2,
               margin:EdgeInsets.only(bottom:5,left:2),
               padding: EdgeInsets.only(top:10,left:13,bottom:7),
               color:Colors.grey,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+              child: Stack(
                 children: <Widget>[
                   Image.asset('assets/images/1.jpg',width: imageWidth,height:imageWidth ,),
                   Text(
@@ -128,7 +128,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
               width: itemWidth,
               margin:EdgeInsets.only(bottom:5,left:2),
               padding: EdgeInsets.only(top:10,left:13,bottom:7),
-              color:Colors.grey,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(8)),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
