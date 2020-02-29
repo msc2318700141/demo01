@@ -224,7 +224,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
                   Image.asset('assets/images/3.jpg',width: 49,height:49,),
 
                   Container(
-                    width: 290,
+                    width: 300,
                     margin: EdgeInsets.only(left:10),
                     child: Column(children: <Widget>[
                       Container(
@@ -263,7 +263,16 @@ Widget kengContent(BuildContext context,double deviceWidth){
                         ),
                       ),
                     ],),
-                  ),
+                  )
+                
+                ],
+              )
+            ),
+            Container(
+              child:Row(
+                children: <Widget>[
+                  Image.asset('assets/images/3.jpg',width: 49,height:49,),
+
                   Container(
                     width: 300,
                     margin: EdgeInsets.only(left:10),
@@ -304,7 +313,16 @@ Widget kengContent(BuildContext context,double deviceWidth){
                         ),
                       ),
                     ],),
-                  ),
+                  )
+                
+                ],
+              )
+            ),
+            Container(
+              child:Row(
+                children: <Widget>[
+                  Image.asset('assets/images/3.jpg',width: 49,height:49,),
+
                   Container(
                     width: 300,
                     margin: EdgeInsets.only(left:10),
