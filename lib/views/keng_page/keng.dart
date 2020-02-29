@@ -92,22 +92,23 @@ Widget kengContent(BuildContext context,double deviceWidth){
             ),
           ),
         ),
-        Padding(
-          padding: EdgeInsets.only(left:5),
-          child:Container(
-            decoration: BoxDecoration(color: Colors.white),
-            child: Text(
-            '近期热门',
-              textAlign: TextAlign.left,
-              style:TextStyle(
-                fontSize: 20,
-                color:Colors.black,
-                letterSpacing: 1
-              ),
-            )
+        Container(
+          decoration: BoxDecoration(color: Colors.white),
+          padding: EdgeInsets.only(left:10),
+          child: Text(
+          '近期热门',
+            textAlign: TextAlign.left,
+            style:TextStyle(
+              fontSize: 18,
+              color:Colors.black,
+              letterSpacing: 1
+            ),
           ),
         ),
-        Wrap(
+        Container(
+          width: deviceWidth,
+          decoration: BoxDecoration(color: Colors.white),
+          child: Wrap(
           spacing: 2,
           children: <Widget>[
             Container(
@@ -209,8 +210,12 @@ Widget kengContent(BuildContext context,double deviceWidth){
             )
           ],
         ),
+        ),
+        
         Container(
+          padding: EdgeInsets.only(top:20,left:16,right:16,bottom:20),
           margin: EdgeInsets.only(top:20,bottom:20),
+          decoration: BoxDecoration(color: Colors.white),
           child:Column(children: <Widget>[
             Container(
               child:Row(
@@ -311,6 +316,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
               )
             ),
             Container(
+              
               child:Row(
                 children: <Widget>[
                   Image.asset('assets/images/3.jpg',width: 50,height:50),
