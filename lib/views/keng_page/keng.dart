@@ -213,7 +213,6 @@ Widget kengContent(BuildContext context,double deviceWidth){
         ),
         
         Container(
-          height: 49,
           padding: EdgeInsets.only(top:20,bottom:20),
           margin: EdgeInsets.only(top:20,bottom:20),
           decoration: BoxDecoration(color: Colors.white),
