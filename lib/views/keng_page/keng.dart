@@ -224,7 +224,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
                   Image.asset('assets/images/3.jpg',width: 49,height:49,),
 
                   Container(
-                    width: 300,
+                    width: 290,
                     margin: EdgeInsets.only(left:10),
                     child: Column(children: <Widget>[
                       Container(
