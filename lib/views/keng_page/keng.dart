@@ -334,11 +334,13 @@ Widget kengContent(BuildContext context,double deviceWidth){
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
                             Flexible(
+                              flex: 9,
                               child: Text(
                               '会飞的鱼，我今天又淘到了好多手办玩具...',
                               ),
                             ),
                             Flexible(
+                              flex: 2,
                               child:Container(
                                 width: 10,
                                 height: 10,
