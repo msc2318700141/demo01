@@ -12,7 +12,6 @@ class KengPage extends StatelessWidget{
     double deviceWidth = MediaQuery.of(context).size.width;
     return Container(
       width: deviceWidth,
-      color: Colors.white,
       decoration: BoxDecoration(
         color: Colors.grey,
 
