@@ -108,37 +108,22 @@ Widget kengContent(BuildContext context,double deviceWidth){
           children: <Widget>[
             Container(
               width: itemWidth,
-              height:itemWidth/2,
+              height:2*itemWidth/5,
               margin:EdgeInsets.only(bottom:5,left:2),
-              padding: EdgeInsets.only(top:10,left:13,bottom:7),
-              color:Colors.grey,
-              child: Stack(
-                children: <Widget>[
-                  Image.asset('assets/images/1.jpg',width: itemWidth,height:imageWidth ,),
-                  Text(
-                    'descyututututuyvuyuyu',
-                    maxLines:1,
-                    overflow: TextOverflow.ellipsis,
-                  )
-
-                ],
-              ),
-            ),
-            Container(
-              width: itemWidth,
-              margin:EdgeInsets.only(bottom:5,left:2),
-              padding: EdgeInsets.only(top:10,left:13,bottom:7),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 color:Colors.yellow,
               ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+              child: Stack(
                 children: <Widget>[
+                  Image.asset('assets/images/1.jpg',width: itemWidth,height:2*itemWidth/5 ,),
                   Text(
-                    'desc',
+                    '盲盒大作战',
                     maxLines:1,
                     overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      color: Colors.white
+                    ),
                   )
 
                 ],
@@ -147,15 +132,20 @@ Widget kengContent(BuildContext context,double deviceWidth){
             Container(
               width: itemWidth,
               margin:EdgeInsets.only(bottom:5,left:2),
-              padding: EdgeInsets.only(top:10,left:13,bottom:7),
-              color:Colors.grey,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color:Colors.yellow,
+              ),
+              child: Stack(
                 children: <Widget>[
+                  Image.asset('assets/images/2.jpg',width: itemWidth,height:2*itemWidth/5 ,),
                   Text(
-                    'desc',
+                    '超人手办展',
                     maxLines:1,
                     overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      color: Colors.white
+                    ),
                   )
 
                 ],
@@ -164,15 +154,42 @@ Widget kengContent(BuildContext context,double deviceWidth){
             Container(
               width: itemWidth,
               margin:EdgeInsets.only(bottom:5,left:2),
-              padding: EdgeInsets.only(top:10,left:13,bottom:7),
-              color:Colors.grey,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color:Colors.yellow,
+              ),
+              child: Stack(
                 children: <Widget>[
+                  Image.asset('assets/images/3.jpg',width: itemWidth,height:2*itemWidth/5 ,),
                   Text(
-                    'desc',
+                    '忍者神坑',
                     maxLines:1,
                     overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      color: Colors.white
+                    ),
+                  )
+
+                ],
+              ),
+            ),
+            Container(
+              width: itemWidth,
+              margin:EdgeInsets.only(bottom:5,left:2),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color:Colors.yellow,
+              ),
+              child: Stack(
+                children: <Widget>[
+                  Image.asset('assets/images/2.jpg',width: itemWidth,height:2*itemWidth/5 ,),
+                  Text(
+                    '盲盒大作战',
+                    maxLines:1,
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      color: Colors.white
+                    ),
                   )
 
                 ],
