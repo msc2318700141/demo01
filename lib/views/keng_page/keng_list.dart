@@ -100,44 +100,48 @@ class ClubList extends StatelessWidget{
         Container(
           child: Row(
             children: <Widget>[
-              Image.asset('assets/images/1.jpg'),
-              Text('变形金刚俱乐部',style: TextStyle(
+              Image.asset('assets/images/1.jpg',width: 65,height: 65),
+              Container(
+                margin: EdgeInsets.only(left:20),
+                child: Text('变形金刚俱乐部',style: TextStyle(
                 fontSize: 12
-              ),)
-              //Image.asset('assets/images/1.jpg'),
+              ),),)
             ],
           ),
         ),
         Container(
           child: Row(
             children: <Widget>[
-              Image.asset('assets/images/1.jpg'),
-              Text('变形金刚俱乐部',style: TextStyle(
+              Image.asset('assets/images/1.jpg',width: 65,height: 65),
+              Container(
+                margin: EdgeInsets.only(left:20),
+                child: Text('变形金刚俱乐部',style: TextStyle(
                 fontSize: 12
-              ),)
-              //Image.asset('assets/images/1.jpg'),
+              ),),)
             ],
           ),
         ),
         Container(
           child: Row(
             children: <Widget>[
-              Image.asset('assets/images/1.jpg'),
-              Text('变形金刚俱乐部',style: TextStyle(
+              Image.asset('assets/images/1.jpg',width: 65,height: 65),
+              Container(
+                margin: EdgeInsets.only(left:20),
+                child: Text('变形金刚俱乐部',style: TextStyle(
                 fontSize: 12
-              ),)
-              //Image.asset('assets/images/1.jpg'),
+              ),),)
             ],
           ),
         ),
         Container(
           child: Row(
             children: <Widget>[
-              Image.asset('assets/images/1.jpg'),
-              Text('变形金刚俱乐部',style: TextStyle(
+              Image.asset('assets/images/1.jpg',width: 65,height: 65),
+              Container(
+                margin: EdgeInsets.only(left:20),
+                child: Text('变形金刚俱乐部',style: TextStyle(
                 fontSize: 12
-              ),)
-              //Image.asset('assets/images/1.jpg'),
+              ),),)
             ],
           ),
         )

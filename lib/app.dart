@@ -1,6 +1,7 @@
 import 'package:demo01/components/recent_hot.dart';
 import 'package:flutter/material.dart';
 import 'views/keng_page/keng.dart';
+import 'views/keng_page/keng_list.dart';
 class App extends StatefulWidget{
   @override
   AppState createState() => AppState();
@@ -11,7 +12,8 @@ class AppState extends State<App>{
   @override 
   Widget build(BuildContext context){
     return Scaffold(
-      body:KengPage(),
+      //body:KengPage(),
+      body:KengList(),
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
         child:Icon(
