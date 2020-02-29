@@ -128,7 +128,10 @@ Widget kengContent(BuildContext context,double deviceWidth){
               width: itemWidth,
               margin:EdgeInsets.only(bottom:5,left:2),
               padding: EdgeInsets.only(top:10,left:13,bottom:7),
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(8)),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color:Colors.yellow,
+              ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
