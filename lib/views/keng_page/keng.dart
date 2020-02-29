@@ -52,7 +52,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
             decoration: BoxDecoration(
               boxShadow:[
                 BoxShadow(
-                  color:Colors.grey[300],
+                  color:Colors.white,
                   blurRadius: 3,
                   spreadRadius: 0.2,
                 )
@@ -93,13 +93,16 @@ Widget kengContent(BuildContext context,double deviceWidth){
         ),
         Padding(
           padding: EdgeInsets.only(top:20),
-          child: Text(
+          child:Container(
+            decoration: BoxDecoration(color: Colors.white),
+            child: Text(
             '近期热门',
-            textAlign: TextAlign.left,
-            style:TextStyle(
-              fontSize: 20,
-              color:Colors.black,
-              letterSpacing: 1
+              textAlign: TextAlign.left,
+              style:TextStyle(
+                fontSize: 20,
+                color:Colors.black,
+                letterSpacing: 1
+              ),
             )
           ),
         ),
@@ -113,6 +116,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 color:Colors.yellow,
+                
               ),
               child: Stack(
                 children: <Widget>[
@@ -137,6 +141,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
                 color:Colors.yellow,
               ),
               child: Stack(
+                alignment: const FractionalOffset(0.1, 0.9),
                 children: <Widget>[
                   Image.asset('assets/images/2.jpg',width: itemWidth,height:2*itemWidth/5 ,),
                   Text(
@@ -144,7 +149,8 @@ Widget kengContent(BuildContext context,double deviceWidth){
                     maxLines:1,
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
-                      color: Colors.white
+                      color: Colors.red,
+                      
                     ),
                   )
 
@@ -160,7 +166,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
               ),
               child: Stack(
                 children: <Widget>[
-                  Image.asset('assets/images/3.jpg',width: itemWidth,height:2*itemWidth/5 ,),
+                  Image.asset('assets/images/3.jpg',width: itemWidth,height:2*itemWidth/5,),
                   Text(
                     '忍者神坑',
                     maxLines:1,
