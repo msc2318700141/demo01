@@ -109,6 +109,7 @@ class KengContent extends StatelessWidget{
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
+                  Image.asset('images/1.jpg'),
                   Text(
                     'descyututututuyvuyuyu',
                     maxLines:1,
