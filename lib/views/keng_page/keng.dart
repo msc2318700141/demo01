@@ -13,6 +13,11 @@ class KengPage extends StatelessWidget{
     return Container(
       width: deviceWidth,
       color: Colors.white,
+      decoration: BoxDecoration(
+        color: Colors.grey,
+
+      ),
+      
       child:kengContent(context,deviceWidth),
     );
   }
