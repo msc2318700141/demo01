@@ -208,47 +208,6 @@ Widget kengContent(BuildContext context,double deviceWidth){
             )
           ],
         ),
-        Container(
-        child: Center(
-          child: ListView(
-            children: <Widget>[
-              Container(
-                color: Color(0xfff1f1f1),
-                child: ListTile(
-                  title: Text("Title1"),
-                  subtitle: Text(
-                      "Title1  subtitleTitle1  subtitleTitle1  "),
-                  isThreeLine: true,
-                  leading: CircleAvatar(
-                    child: Icon(Icons.home),
-                  ),
-                  dense: true,
-                  onTap: () => print("Title1"),
-                ),
-              ),
-              ListTile(
-                title: Text("Title2"),
-                leading: CircleAvatar(
-                  child: Icon(Icons.alarm),
-                ),
-                selected: true,
-                trailing: Icon(Icons.add),
-                onTap: () => print("Title2"),
-                dense: false,
-              ),
-              ListTile(
-                title: Text(
-                    "Title3Title3Title3Title3Title3Title3Title3Title3Title3Title3Title3"),
-                leading: CircleAvatar(
-                  child: Icon(Icons.add),
-                ),
-                onTap: () => print("Title3"),
-                enabled: false,
-              ),
-            ],
-          ),
-        )
-        ),
         //Container
       ],
     );
