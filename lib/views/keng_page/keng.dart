@@ -213,140 +213,152 @@ Widget kengContent(BuildContext context,double deviceWidth){
           margin: EdgeInsets.only(top:20,bottom:20),
           child:Column(children: <Widget>[
             Container(
-                  child:Row(
-                    children: <Widget>[
-                      Image.asset('assets/images/3.jpg',width: 30,height:30),
+              child:Row(
+                children: <Widget>[
+                  Image.asset('assets/images/3.jpg',width: 30,height:30),
+                  Container(
+                    child: Column(children: <Widget>[
                       Container(
-                        child: Column(children: <Widget>[
-                          Container(
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: <Widget>[
-                                Text(
-                                  '神奇魔法超人',
-                                ),
-                                Text(
-                                  '17:56',
-                                ),
-                              ],
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Text(
+                              '神奇魔法超人',
                             ),
-                          ),
-                          Container(
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: <Widget>[
-                                Text(
-                                  '会飞的鱼，我今天又淘到了好多手办玩具...',
-                                ),
-                                Container(
-                                  width: 10,
-                                  height: 10,
-                                  decoration: BoxDecoration(
-                                    borderRadius:BorderRadius.circular(5)
-                                  ),
-                                  child: Text(
-                                    '5',
-                                    style: TextStyle(color: Colors.white,)
-                                  ),
-                                )
-                              ],
+                            Text(
+                              '17:56',
                             ),
-                          ),
-                        ],),
-                      )
-                    ],
-                  )
-                ),
-                Container(
-                  child:Row(
-                    children: <Widget>[
-                      Image.asset('assets/images/3.jpg',width: itemWidth,height:2*itemWidth/5,fit: BoxFit.cover,),
+                          ],
+                        ),
+                      ),
                       Container(
-                        child: Column(children: <Widget>[
-                          Container(
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: <Widget>[
-                                Text(
-                                  '神奇魔法超人',
-                                ),
-                                Text(
-                                  '17:56',
-                                ),
-                              ],
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Flexible(
+                              child: Text(
+                              '会飞的鱼，我今天又淘到了好多手办玩具...',
+                              ),
                             ),
-                          ),
-                          Container(
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: <Widget>[
-                                Text(
-                                  '会飞的鱼，我今天又淘到了好多手办玩具...',
+                            Flexible(
+                              child:Container(
+                                width: 10,
+                                height: 10,
+                                decoration: BoxDecoration(
+                                  borderRadius:BorderRadius.circular(5)
                                 ),
-                                Container(
-                                  width: 10,
-                                  height: 10,
-                                  decoration: BoxDecoration(
-                                    borderRadius:BorderRadius.circular(5)
-                                  ),
-                                  child: Text(
-                                    '5',
-                                    style: TextStyle(color: Colors.white,)
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
-                        ],),
-                      )
-                    ],
+                                child: Text(
+                                  '5',
+                                  style: TextStyle(color: Colors.white,)
+                                ),
+                              ) ,
+                            )
+                          ],
+                        ),
+                      ),
+                    ],),
                   )
-                ),
-                Container(
-                  child:Row(
-                    children: <Widget>[
-                      Image.asset('assets/images/3.jpg',width: itemWidth,height:2*itemWidth/5,fit: BoxFit.cover,),
+                ],
+              )
+            ),
+            Container(
+              child:Row(
+                children: <Widget>[
+                  Image.asset('assets/images/3.jpg',width: 30,height:30),
+                  Container(
+                    child: Column(children: <Widget>[
                       Container(
-                        child: Column(children: <Widget>[
-                          Container(
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: <Widget>[
-                                Text(
-                                  '神奇魔法超人',
-                                ),
-                                Text(
-                                  '17:56',
-                                ),
-                              ],
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Text(
+                              '神奇魔法超人',
                             ),
-                          ),
-                          Container(
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: <Widget>[
-                                Text(
-                                  '会飞的鱼，我今天又淘到了好多手办玩具...',
-                                ),
-                                Container(
-                                  width: 10,
-                                  height: 10,
-                                  decoration: BoxDecoration(
-                                    borderRadius:BorderRadius.circular(5)
-                                  ),
-                                  child: Text(
-                                    '5',
-                                    style: TextStyle(color: Colors.white,)
-                                  ),
-                                )
-                              ],
+                            Text(
+                              '17:56',
                             ),
-                          ),
-                        ],),
-                      )
-                    ],
+                          ],
+                        ),
+                      ),
+                      Container(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Flexible(
+                              child: Text(
+                              '会飞的鱼，我今天又淘到了好多手办玩具...',
+                              ),
+                            ),
+                            Flexible(
+                              child:Container(
+                                width: 10,
+                                height: 10,
+                                decoration: BoxDecoration(
+                                  borderRadius:BorderRadius.circular(5)
+                                ),
+                                child: Text(
+                                  '5',
+                                  style: TextStyle(color: Colors.white,)
+                                ),
+                              ) ,
+                            )
+                          ],
+                        ),
+                      ),
+                    ],),
                   )
-                )
+                ],
+              )
+            ),
+            Container(
+              child:Row(
+                children: <Widget>[
+                  Image.asset('assets/images/3.jpg',width: 30,height:30),
+                  Container(
+                    child: Column(children: <Widget>[
+                      Container(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Text(
+                              '神奇魔法超人',
+                            ),
+                            Text(
+                              '17:56',
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Flexible(
+                              child: Text(
+                              '会飞的鱼，我今天又淘到了好多手办玩具...',
+                              ),
+                            ),
+                            Flexible(
+                              child:Container(
+                                width: 10,
+                                height: 10,
+                                decoration: BoxDecoration(
+                                  borderRadius:BorderRadius.circular(5)
+                                ),
+                                child: Text(
+                                  '5',
+                                  style: TextStyle(color: Colors.white,)
+                                ),
+                              ) ,
+                            )
+                          ],
+                        ),
+                      ),
+                    ],),
+                  )
+                ],
+              )
+            ),
           ],)
         ),
       ],
