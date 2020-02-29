@@ -112,6 +112,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
             Container(
               width: itemWidth,
               height:2*itemWidth/5,
+              
               margin:EdgeInsets.only(bottom:5,left:2),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
@@ -120,7 +121,8 @@ Widget kengContent(BuildContext context,double deviceWidth){
               ),
               child: Stack(
                 children: <Widget>[
-                  Image.asset('assets/images/1.jpg',width: itemWidth,height:2*itemWidth/5 ,fit: BoxFit.cover,),
+                  Image.network('assets/images/1.jpg',),
+                  Image.asset('assets/images/1.jpg',width: itemWidth,height:2*itemWidth/5 ,fit: BoxFit.fill,),
                   Text(
                     '盲盒大作战',
                     maxLines:1,
