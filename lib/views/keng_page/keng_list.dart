@@ -50,7 +50,8 @@ class ListContent extends StatelessWidget{
 class RecommendList extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    return ListView(
+    return Container(child:
+    ListView(
       scrollDirection: Axis.horizontal,
       children: <Widget>[
         Container(
@@ -87,7 +88,7 @@ class RecommendList extends StatelessWidget{
               Text('超级热门组织三号',style: TextStyle(color:Colors.grey)),
           ],),
         )
-      ],
+      ],),
     );
   }
 }
