@@ -208,6 +208,18 @@ Widget kengContent(BuildContext context,double deviceWidth){
             )
           ],
         ),
+        ListTile(
+                leading: new Icon(Icons.cake),
+                title: new Text('标题'),
+                subtitle: new Row(
+                  children: <Widget>[
+                    new Text('副标题'),
+                    new Icon(Icons.person)
+                  ],
+                ),
+                trailing: new Icon(Icons.save),
+              )
+        //Container
       ],
     );
   }
