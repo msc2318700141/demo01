@@ -313,7 +313,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
             Container(
               child:Row(
                 children: <Widget>[
-                  Image.asset('assets/images/3.jpg',width: 30,height:30),
+                  Image.asset('assets/images/3.jpg',width: 50,height:50),
                   Container(
                     child: Column(children: <Widget>[
                       Container(
@@ -333,26 +333,40 @@ Widget kengContent(BuildContext context,double deviceWidth){
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
-                            Flexible(
-                              flex: 9,
-                              child: Text(
+                            Text(
                               '会飞的鱼，我今天又淘到了好多手办玩具...',
-                              ),
                             ),
-                            Flexible(
-                              flex: 2,
-                              child:Container(
+                            Container(
                                 width: 10,
                                 height: 10,
                                 decoration: BoxDecoration(
-                                  borderRadius:BorderRadius.circular(5)
+                                  borderRadius:BorderRadius.circular(5),
+                                  color:Colors.red
                                 ),
                                 child: Text(
                                   '5',
                                   style: TextStyle(color: Colors.white,)
                                 ),
                               ) ,
-                            )
+                            // Flexible(
+                            //   flex: 9,
+                            //   child: 
+                            // ),
+                            // Flexible(
+                            //   flex: 2,
+                            //   child:Container(
+                            //     width: 10,
+                            //     height: 10,
+                            //     decoration: BoxDecoration(
+                            //       borderRadius:BorderRadius.circular(5),
+                            //       color:Colors.red
+                            //     ),
+                            //     child: Text(
+                            //       '5',
+                            //       style: TextStyle(color: Colors.white,)
+                            //     ),
+                            //   ) ,
+                            //)
                           ],
                         ),
                       ),
