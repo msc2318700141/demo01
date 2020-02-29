@@ -114,7 +114,7 @@ Widget kengContent(BuildContext context,double deviceWidth){
               color:Colors.grey,
               child: Stack(
                 children: <Widget>[
-                  Image.asset('assets/images/1.jpg',width: imageWidth,height:imageWidth ,),
+                  Image.asset('assets/images/1.jpg',width: itemWidth,height:imageWidth ,),
                   Text(
                     'descyututututuyvuyuyu',
                     maxLines:1,
