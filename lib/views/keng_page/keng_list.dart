@@ -25,7 +25,7 @@ class ListContent extends StatelessWidget{
                 Text(
                   '兴趣推荐',
                   style: TextStyle(
-                    fontSize: 30,
+                    fontSize: 20,
                     color:Colors.black54,
                     fontWeight: FontWeight.bold
                   ),
@@ -33,7 +33,7 @@ class ListContent extends StatelessWidget{
                 Text(
                   '取消保存',
                   style: TextStyle(
-                    fontSize: 22,
+                    fontSize: 14,
                     color:Colors.black12,
                   ),
                 )
@@ -56,10 +56,15 @@ class RecommendList extends StatelessWidget{
         Container(
           margin: EdgeInsets.only(left:20,bottom: 20),
           padding: EdgeInsets.all(10),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(8),
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Container(
+                margin: EdgeInsets.only(bottom:20),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -112,6 +117,7 @@ class ClubList extends StatelessWidget{
       padding: EdgeInsets.all(10),
       child: Column(children: <Widget>[
         Container(
+          margin: EdgeInsets.only(bottom:20),
           child: Row(
             children: <Widget>[
               Container(
@@ -127,6 +133,7 @@ class ClubList extends StatelessWidget{
           ),
         ),
         Container(
+          margin: EdgeInsets.only(bottom:20),
           child: Row(
             children: <Widget>[
               Container(
@@ -142,6 +149,7 @@ class ClubList extends StatelessWidget{
           ),
         ),
         Container(
+          margin: EdgeInsets.only(bottom:20),
           child: Row(
             children: <Widget>[
               Container(
@@ -157,6 +165,7 @@ class ClubList extends StatelessWidget{
           ),
         ),
         Container(
+          margin: EdgeInsets.only(bottom:20),
           child: Row(
             children: <Widget>[
               Container(
