@@ -85,6 +85,10 @@ class RecommendList extends StatelessWidget{
         Container(
           margin: EdgeInsets.only(left:10),
           padding: EdgeInsets.all(10),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(8),
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -114,24 +118,11 @@ class ClubList extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10),
+      padding: EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: Colors.white,
+      ),
       child: Column(children: <Widget>[
-        Container(
-          margin: EdgeInsets.only(bottom:20),
-          child: Row(
-            children: <Widget>[
-              Container(
-                width:65,
-                height: 65,
-                margin: EdgeInsets.only(right:20),
-                child: Image.asset('assets/images/1.jpg',width: 65,height:65 ,fit: BoxFit.fill,),
-              ),
-              Text('变形金刚俱乐部',style: TextStyle(
-                fontSize: 12
-              ),)
-            ],
-          ),
-        ),
         Container(
           margin: EdgeInsets.only(bottom:20),
           child: Row(
