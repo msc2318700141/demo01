@@ -54,13 +54,20 @@ class RecommendList extends StatelessWidget{
     Row(
       children: <Widget>[
         Container(
-          margin: EdgeInsets.only(left:10,bottom: 10),
+          margin: EdgeInsets.only(left:20,bottom: 20),
+          padding: EdgeInsets.all(10),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Container(
                 child: Row(
                   children: <Widget>[
-                    Image.asset('assets/images/1.jpg',width: 43,height:43 ),
+                    Container(
+                      width:43,
+                      height: 43,
+                      margin: EdgeInsets.only(right:10),
+                      child: Image.asset('assets/images/1.jpg',width: 43,height:43 ,fit: BoxFit.fill,),
+                    ),
                     Text('盲盒大作战')
                   ],
                 ),
@@ -72,12 +79,19 @@ class RecommendList extends StatelessWidget{
         ),
         Container(
           margin: EdgeInsets.only(left:10),
+          padding: EdgeInsets.all(10),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Container(
                 child: Row(
                   children: <Widget>[
-                    Image.asset('assets/images/1.jpg',width: 43,height:43 ),
+                    Container(
+                      width:43,
+                      height: 43,
+                      margin: EdgeInsets.only(right:10),
+                      child: Image.asset('assets/images/1.jpg',width: 43,height:43 ,fit: BoxFit.fill,),
+                    ),
                     Text('盲盒大作战')
                   ],
                 ),
@@ -100,51 +114,63 @@ class ClubList extends StatelessWidget{
         Container(
           child: Row(
             children: <Widget>[
-              Image.asset('assets/images/1.jpg',width: 65,height: 65),
               Container(
-                margin: EdgeInsets.only(left:20),
-                child: Text('变形金刚俱乐部',style: TextStyle(
+                width:65,
+                height: 65,
+                margin: EdgeInsets.only(right:20),
+                child: Image.asset('assets/images/1.jpg',width: 65,height:65 ,fit: BoxFit.fill,),
+              ),
+              Text('变形金刚俱乐部',style: TextStyle(
                 fontSize: 12
-              ),),)
+              ),)
             ],
           ),
         ),
         Container(
           child: Row(
             children: <Widget>[
-              Image.asset('assets/images/1.jpg',width: 65,height: 65),
               Container(
-                margin: EdgeInsets.only(left:20),
-                child: Text('变形金刚俱乐部',style: TextStyle(
+                width:65,
+                height: 65,
+                margin: EdgeInsets.only(right:20),
+                child: Image.asset('assets/images/1.jpg',width: 65,height:65 ,fit: BoxFit.fill,),
+              ),
+              Text('变形金刚俱乐部',style: TextStyle(
                 fontSize: 12
-              ),),)
+              ),)
             ],
           ),
         ),
         Container(
           child: Row(
             children: <Widget>[
-              Image.asset('assets/images/1.jpg',width: 65,height: 65),
               Container(
-                margin: EdgeInsets.only(left:20),
-                child: Text('变形金刚俱乐部',style: TextStyle(
+                width:65,
+                height: 65,
+                margin: EdgeInsets.only(right:20),
+                child: Image.asset('assets/images/1.jpg',width: 65,height:65 ,fit: BoxFit.fill,),
+              ),
+              Text('变形金刚俱乐部',style: TextStyle(
                 fontSize: 12
-              ),),)
+              ),)
             ],
           ),
         ),
         Container(
           child: Row(
             children: <Widget>[
-              Image.asset('assets/images/1.jpg',width: 65,height: 65),
               Container(
-                margin: EdgeInsets.only(left:20),
-                child: Text('变形金刚俱乐部',style: TextStyle(
+                width:65,
+                height: 65,
+                margin: EdgeInsets.only(right:20),
+                child: Image.asset('assets/images/1.jpg',width: 65,height:65 ,fit: BoxFit.fill,),
+              ),
+              Text('变形金刚俱乐部',style: TextStyle(
                 fontSize: 12
-              ),),)
+              ),)
             ],
           ),
-        )
+        ),
       ],),
     );
   }
