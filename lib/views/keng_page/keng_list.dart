@@ -51,8 +51,7 @@ class RecommendList extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Container(child:
-    ListView(
-      scrollDirection: Axis.horizontal,
+    Row(
       children: <Widget>[
         Container(
           margin: EdgeInsets.only(left:10,bottom: 10),
