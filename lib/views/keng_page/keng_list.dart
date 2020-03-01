@@ -4,7 +4,7 @@ class KengList extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('坑'),
+        title: Text('坑',style: TextStyle(color: Colors.black),),
         backgroundColor: Colors.white,
       ),
       body:ListContent()
@@ -83,7 +83,7 @@ class RecommendList extends StatelessWidget{
           ],),
         ),
         Container(
-          margin: EdgeInsets.only(left:10),
+          margin: EdgeInsets.only(left:20,bottom: 20),
           padding: EdgeInsets.all(10),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -93,6 +93,7 @@ class RecommendList extends StatelessWidget{
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Container(
+                margin: EdgeInsets.only(bottom:20),
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -109,7 +110,7 @@ class RecommendList extends StatelessWidget{
               Text('热门组织牛红二号',style: TextStyle(color:Colors.grey)),
               Text('超级热门组织三号',style: TextStyle(color:Colors.grey)),
           ],),
-        )
+        ),
       ],),
     );
   }
