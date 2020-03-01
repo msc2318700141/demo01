@@ -43,7 +43,7 @@ class ChatContent extends StatelessWidget{
                   ),
                   child: Text(
                     '我上次买的什么手办，可以给我发几张图片么？',
-                    
+                    overflow: TextOverflow.visible,
                   ),
                 ),
               )
@@ -95,7 +95,7 @@ class ChatContent extends StatelessWidget{
                     borderRadius: BorderRadius.circular(8)
                   ),
                   child: Text(
-                    '我上次买的什么手办，可以给我发几张图片么？',
+                    '可以给我发几张图片么？',
                   ),
                 ),
               )
