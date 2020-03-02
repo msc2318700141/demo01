@@ -42,7 +42,7 @@ class OrganizationContent extends StatelessWidget{
             Text('我的组织'),
             Row(children: <Widget>[
               Image.asset('assets/images/1.jpg',width: 49,height: 49,),
-              Row(
+              Expanded(child: Row(
                 children: <Widget>[
                   Column(
                     mainAxisAlignment:MainAxisAlignment.spaceAround,
@@ -56,14 +56,13 @@ class OrganizationContent extends StatelessWidget{
                     )
                   ],),
                   FlatButton(
-                    color: Colors.blue,
-                    highlightColor: Colors.blue[700],
+                    color: Color(0XFFFFE300),
                     splashColor: Colors.black,
                     child: Text("吹水"),
                     shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
                     onPressed: () {},
                   )
-                ],
+                ],,)
               )
             ],)
           ],),
@@ -78,7 +77,7 @@ class OrganizationContent extends StatelessWidget{
             Text('我的组织'),
             Row(children: <Widget>[
               Image.asset('assets/images/1.jpg',width: 49,height: 49,),
-              Row(
+              Expanded(child: Row(
                 children: <Widget>[
                   Column(
                     mainAxisAlignment:MainAxisAlignment.spaceAround,
@@ -92,15 +91,15 @@ class OrganizationContent extends StatelessWidget{
                     )
                   ],),
                   FlatButton(
-                    color: Colors.blue,
-                    highlightColor: Colors.blue[700],
+                    color: Color(0XFFFFE300),
                     splashColor: Colors.black,
                     child: Text("吹水"),
                     shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
                     onPressed: () {},
                   )
                 ],
-              )
+              ),),
+              
             ],)
           ],),
           )

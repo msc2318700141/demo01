@@ -8,6 +8,7 @@ class MyApp extends StatelessWidget{
       title: 'My cool app',
       theme: ThemeData(
         primarySwatch: Colors.yellow,
+        iconTheme:IconThemeData(color: Colors.yellow),
         textTheme: TextTheme( 
             button: TextStyle(
           color: Colors.white,
