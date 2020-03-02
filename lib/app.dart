@@ -4,6 +4,7 @@ import 'views/keng_page/keng.dart';
 import 'views/keng_page/keng_list.dart';
 import 'views/organization_page/organization_detail.dart';
 import 'views/chat_page/chat_page.dart';
+import 'views/organization_page/organization_page.dart';
 class App extends StatefulWidget{
   @override
   AppState createState() => AppState();
@@ -17,7 +18,8 @@ class AppState extends State<App>{
       //body:KengPage(),
       // body:KengList(),
       //body:ChatPage(),
-      body:OrganizationDetail(),
+      //body:OrganizationDetail(),
+      body:Organization(),
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
         child:Icon(
