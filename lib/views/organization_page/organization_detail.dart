@@ -103,17 +103,16 @@ class OrganizationDetailContent extends StatelessWidget{
             ],
           ),
         ),
-        Container(
-          alignment: Alignment.center,
-          child: FlatButton(
-            //color: Colors.blue,
-            colorBrightness: Brightness.dark,
-            splashColor: Colors.grey,
-            child: Text("申请加入"),
-            shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-            onPressed: () {},
-          )
-        )
+        Padding(padding: EdgeInsets.only(top:10),
+          child: Container(
+            decoration: BoxDecoration(
+              border:Border.all(color: Colors.black,width: 1,style: BorderStyle.solid)
+            ),
+            child: Text(
+              '申请加入'
+            ),
+          ),
+        ),
       ],),
     );
   }
