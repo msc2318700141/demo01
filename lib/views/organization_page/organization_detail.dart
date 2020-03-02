@@ -80,7 +80,6 @@ class OrganizationDetailContent extends StatelessWidget{
         ),
         Container(
           padding: EdgeInsets.fromLTRB(16, 10, 16, 10),
-          height: 100.5,
           child: Column(
             children: <Widget>[
               Text(
