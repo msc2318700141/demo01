@@ -13,6 +13,9 @@ class OrganizationContent extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(
+        color: Color(0xFFF8F8F8),
+      ),
       child: Column(
         children: <Widget>[
           Column(children: <Widget>[
@@ -29,7 +32,11 @@ class OrganizationContent extends StatelessWidget{
               maxLines: 3,
             )
           ],),
-          Column(children: <Widget>[
+          Container(
+            margin: EdgeInsets.only(bottom:10),
+            child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
             Text('我的组织'),
             Row(children: <Widget>[
               Image.asset('assets/images/1.jpg',width: 49,height: 49,),
@@ -37,6 +44,7 @@ class OrganizationContent extends StatelessWidget{
                 children: <Widget>[
                   Column(
                     mainAxisAlignment:MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                     Text('神奇魔法人'),
                     Text('1370粉丝'),
@@ -56,7 +64,42 @@ class OrganizationContent extends StatelessWidget{
                 ],
               )
             ],)
-          ],)
+          ],),
+          ),
+          Container(
+            margin: EdgeInsets.only(bottom:10),
+            child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+            Text('我的组织'),
+            Row(children: <Widget>[
+              Image.asset('assets/images/1.jpg',width: 49,height: 49,),
+              Row(
+                children: <Widget>[
+                  Column(
+                    mainAxisAlignment:MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                    Text('神奇魔法人'),
+                    Text('1370粉丝'),
+                    Text('组织简介，玩具的关系，在人和人之间也有',
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 1,
+                    )
+                  ],),
+                  FlatButton(
+                    color: Colors.blue,
+                    highlightColor: Colors.blue[700],
+                    splashColor: Colors.black,
+                    child: Text("吹水"),
+                    shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+                    onPressed: () {},
+                  )
+                ],
+              )
+            ],)
+          ],),
+          )
         ],
       ),
     );
