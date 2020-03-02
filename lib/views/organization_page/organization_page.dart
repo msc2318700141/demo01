@@ -18,7 +18,7 @@ class OrganizationContent extends StatelessWidget{
           Column(children: <Widget>[
             Row(
               children: <Widget>[
-                Image.asset('assets/images/1.jpg'),
+                Image.asset('assets/images/1.jpg',width: 64,height: 64,),
                 Column(children: <Widget>[
                   Text('汽车总动员'),
                   Text('1029组织 1029成员')
@@ -32,7 +32,7 @@ class OrganizationContent extends StatelessWidget{
           Column(children: <Widget>[
             Text('我的组织'),
             Row(children: <Widget>[
-              Image.asset('assets/images/1.jpg'),
+              Image.asset('assets/images/1.jpg',width: 49,height: 49,),
               Row(
                 children: <Widget>[
                   Column(
