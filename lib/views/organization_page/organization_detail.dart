@@ -46,32 +46,36 @@ class OrganizationDetailContent extends StatelessWidget{
                 Text(
                   '男-89人',
                 )
-              ],)
-            ],),
-            Row(children: <Widget>[
+              ],),
               Column(children: <Widget>[
-                LinearProgressIndicator(
-                  backgroundColor: Colors.grey[200],
-                  valueColor: AlwaysStoppedAnimation(Colors.blue),
-                  value: .5, 
+                SizedBox(
+                  height: 100,
+                  width: 100,
+                  child: CircularProgressIndicator(
+                    backgroundColor: Colors.grey[200],
+                    valueColor: AlwaysStoppedAnimation(Colors.blue),
+                    value: .7,
+                  ),
+                ),
+                Text(
+                  '男-89人',
+                )
+              ],),
+              Column(children: <Widget>[
+                SizedBox(
+                  height: 100,
+                  width: 100,
+                  child: CircularProgressIndicator(
+                    backgroundColor: Colors.grey[200],
+                    valueColor: AlwaysStoppedAnimation(Colors.blue),
+                    value: .7,
+                  ),
                 ),
                 Text(
                   '男-89人',
                 )
               ],)
             ],),
-            Row(children: <Widget>[
-              Column(children: <Widget>[
-                LinearProgressIndicator(
-                  backgroundColor: Colors.grey[200],
-                  valueColor: AlwaysStoppedAnimation(Colors.blue),
-                  value: .5, 
-                ),
-                Text(
-                  '男-89人',
-                )
-              ],)
-            ],)
           ],),
         )
       ],),
