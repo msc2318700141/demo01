@@ -34,7 +34,7 @@ class OrganizationContent extends StatelessWidget{
           ],),
           Container(
             margin: EdgeInsets.only(bottom:10),
-            decoration: BoxDecoration(color: Colors.white),
+            decoration: BoxDecoration(color: Colors.red),
             child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
