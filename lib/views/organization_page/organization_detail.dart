@@ -1,29 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:micro_flutter_sdk/components.dart';
+//import 'package:micro_flutter_sdk/components.dart';
 
 class OrganizationDetail extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MicroAppBar(
-        elevation: 0,
-        title: MicroSearchField(
-          controller: tagController,
-//          onTap: _jumpToSearch,
-          onSubmitted: _onSubmitted,
-          enabled: true,
-        ),
-        automaticallyImplyLeading: false,
-        actions: <Widget>[
-          FlatButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-            child: Text("取消"),
-          )
-        ],
-      ),
       body: OrganizationDetailContent(),
     );
   }
@@ -43,7 +25,7 @@ class OrganizationDetailContent extends StatelessWidget{
             ),
             Column(children: <Widget>[
               Text('狂铁战士组织',style: TextStyle(fontSize: 20),),
-              Text('166成员',style: TextStyle(fontSize: 12,color: Color(0xFF999999),)
+              Text('166成员',style: TextStyle(fontSize: 12,color: Color(0xFF999999),))
             ],)
           ],)
         ),
