@@ -18,17 +18,17 @@ class OrganizationDetailContent extends StatelessWidget{
         color: Color(0xFFF8F8F8)
       ),
       child: Column(children: <Widget>[
-        // Padding(padding: EdgeInsets.only(top:30,left:16),
-        //   child:Row(children: <Widget>[
-        //     Container(
-        //       child: Image.asset('assets/images/1.jpg'),
-        //     ),
-        //     Column(children: <Widget>[
-        //       Text('狂铁战士组织',style: TextStyle(fontSize: 20),),
-        //       Text('166成员',style: TextStyle(fontSize: 12,color: Color(0xFF999999),))
-        //     ],)
-        //   ],)
-        // ),
+        Padding(padding: EdgeInsets.only(top:30,left:16),
+          child:Row(children: <Widget>[
+            Container(
+              child: Image.asset('assets/images/1.jpg'),
+            ),
+            Column(children: <Widget>[
+              Text('狂铁战士组织',style: TextStyle(fontSize: 20),),
+              Text('166成员',style: TextStyle(fontSize: 12,color: Color(0xFF999999),))
+            ],)
+          ],)
+        ),
         Padding(padding: EdgeInsets.only(top:10,left:16),
           child: Column(children: <Widget>[
             Text('组织成员'),
