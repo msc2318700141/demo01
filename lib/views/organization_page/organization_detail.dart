@@ -23,10 +23,10 @@ class OrganizationDetailContent extends StatelessWidget{
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
             Image.asset('assets/images/1.jpg'),
-            Column(children: <Widget>[
-              Text('狂铁战士组织',style: TextStyle(fontSize: 20),),
-              Text('166成员',style: TextStyle(fontSize: 12,color: Color(0xFF999999),))
-            ],)
+            // Column(children: <Widget>[
+            //   Text('狂铁战士组织',style: TextStyle(fontSize: 20),),
+            //   Text('166成员',style: TextStyle(fontSize: 12,color: Color(0xFF999999),))
+            // ],)
           ],)
         ),
         Padding(padding: EdgeInsets.only(top:10,left:16),
