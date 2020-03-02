@@ -7,6 +7,7 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
       title: 'My cool app',
       theme: ThemeData(
+        primarySwatch: Colors.yellow,
         textTheme: TextTheme( 
             button: TextStyle(
           color: Colors.white,
