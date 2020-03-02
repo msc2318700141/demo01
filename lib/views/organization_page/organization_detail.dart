@@ -1,12 +1,28 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:micro_flutter_sdk/components.dart';
 
 class OrganizationDetail extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('组织详情'),
+      appBar: MicroAppBar(
+        elevation: 0,
+        title: MicroSearchField(
+          controller: tagController,
+//          onTap: _jumpToSearch,
+          onSubmitted: _onSubmitted,
+          enabled: true,
+        ),
+        automaticallyImplyLeading: false,
+        actions: <Widget>[
+          FlatButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+            child: Text("取消"),
+          )
+        ],
       ),
       body: OrganizationDetailContent(),
     );
