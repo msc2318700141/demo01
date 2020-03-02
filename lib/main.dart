@@ -6,6 +6,12 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'My cool app',
+      theme: ThemeData(
+        textTheme: TextTheme( 
+            button: TextStyle(
+          color: Colors.white,
+        )),
+      ),
       home: new App(),
     );
   }
