@@ -43,7 +43,7 @@ class OrganizationContent extends StatelessWidget{
             Row(children: <Widget>[
               Image.asset('assets/images/1.jpg',width: 49,height: 49,),
               Container(
-                width: 300,
+                width: 230,
                 child: Row(
                 children: <Widget>[
                   Column(
@@ -80,7 +80,7 @@ class OrganizationContent extends StatelessWidget{
             Row(children: <Widget>[
               Image.asset('assets/images/1.jpg',width: 49,height: 49,),
               Container(
-                width: 300,
+                width: 230,
                 child: Row(
                 children: <Widget>[
                   Column(
