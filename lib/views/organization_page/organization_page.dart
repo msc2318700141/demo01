@@ -42,7 +42,9 @@ class OrganizationContent extends StatelessWidget{
             Text('我的组织'),
             Row(children: <Widget>[
               Image.asset('assets/images/1.jpg',width: 49,height: 49,),
-              Expanded(child: Row(
+              Container(
+                width: 300,
+                child: Row(
                 children: <Widget>[
                   Column(
                     mainAxisAlignment:MainAxisAlignment.spaceAround,
@@ -77,7 +79,9 @@ class OrganizationContent extends StatelessWidget{
             Text('我的组织'),
             Row(children: <Widget>[
               Image.asset('assets/images/1.jpg',width: 49,height: 49,),
-              Expanded(child: Row(
+              Container(
+                width: 300,
+                child: Row(
                 children: <Widget>[
                   Column(
                     mainAxisAlignment:MainAxisAlignment.spaceAround,
