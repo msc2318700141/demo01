@@ -14,6 +14,9 @@ class AppState extends State<App>{
   //RecentHot recentHot;
   @override 
   Widget build(BuildContext context){
+    ThemeData(
+      primaryColor: Colors.yellow
+    );
     return Scaffold(
       //body:KengPage(),
       // body:KengList(),
