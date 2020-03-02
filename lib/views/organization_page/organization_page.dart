@@ -45,7 +45,7 @@ class OrganizationContent extends StatelessWidget{
                Row(
                 children: <Widget>[
                   Container(
-                    width: 250,
+                    width: 230,
                     child: Column(
                     mainAxisAlignment:MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -81,7 +81,7 @@ class OrganizationContent extends StatelessWidget{
               Row(
                 children: <Widget>[
                   Container(
-                    width: 250,
+                    width: 230,
                     child: Column(
                     mainAxisAlignment:MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.start,
