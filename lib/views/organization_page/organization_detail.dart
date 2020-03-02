@@ -77,6 +77,42 @@ class OrganizationDetailContent extends StatelessWidget{
               ],)
             ],),
           ],),
+        ),
+        Container(
+          padding: EdgeInsets.fromLTRB(16, 10, 16, 10),
+          height: 100.5,
+          child: Column(
+            children: <Widget>[
+              Text(
+                '管理员',
+
+              ),
+              Row(children: <Widget>[
+                CircleAvatar(
+                  child: Image.network('assets/images/1.jpg'),
+                  radius: 39,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Text('Status'),
+                    Text('群主')
+                  ],
+                )
+              ],)
+            ],
+          ),
+        ),
+        Container(
+          alignment: Alignment.center,
+          child: FlatButton(
+            //color: Colors.blue,
+            colorBrightness: Brightness.dark,
+            splashColor: Colors.grey,
+            child: Text("申请加入"),
+            shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+            onPressed: () {},
+          )
         )
       ],),
     );
