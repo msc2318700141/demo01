@@ -42,11 +42,11 @@ class OrganizationContent extends StatelessWidget{
             Text('我的组织'),
             Row(children: <Widget>[
               Image.asset('assets/images/1.jpg',width: 49,height: 49,),
-              Container(
-                width: 230,
-                child: Row(
+               Row(
                 children: <Widget>[
-                  Column(
+                  Container(
+                    width: 250,
+                    child: Column(
                     mainAxisAlignment:MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
@@ -56,7 +56,7 @@ class OrganizationContent extends StatelessWidget{
                       overflow: TextOverflow.ellipsis,
                       maxLines: 1,
                     )
-                  ],),
+                  ],),),
                   FlatButton(
                     color: Color(0XFFFFE300),
                     splashColor: Colors.black,
@@ -65,7 +65,6 @@ class OrganizationContent extends StatelessWidget{
                     onPressed: () {},
                   )
                 ],)
-              )
             ],)
           ],),
           ),
@@ -79,11 +78,11 @@ class OrganizationContent extends StatelessWidget{
             Text('我的组织'),
             Row(children: <Widget>[
               Image.asset('assets/images/1.jpg',width: 49,height: 49,),
-              Container(
-                width: 230,
-                child: Row(
+              Row(
                 children: <Widget>[
-                  Column(
+                  Container(
+                    width: 250,
+                    child: Column(
                     mainAxisAlignment:MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
@@ -93,7 +92,7 @@ class OrganizationContent extends StatelessWidget{
                       overflow: TextOverflow.ellipsis,
                       maxLines: 1,
                     )
-                  ],),
+                  ],),),
                   FlatButton(
                     color: Color(0XFFFFE300),
                     splashColor: Colors.black,
@@ -102,7 +101,7 @@ class OrganizationContent extends StatelessWidget{
                     onPressed: () {},
                   )
                 ],
-              ),),
+              ),
               
             ],)
           ],),
