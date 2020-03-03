@@ -41,10 +41,12 @@ class ChatContent extends StatelessWidget{
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(8)
                   ),
-                  child: Text(
+                  child:Container(
+                    decoration: BoxDecoration(color: Colors.white),
+                    child: Text(
                     '我上次买的什么手办',
                     overflow: TextOverflow.visible,
-                  ),
+                  ),)
                 ),
               )
             ],
@@ -62,9 +64,12 @@ class ChatContent extends StatelessWidget{
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(8)
                   ),
-                  child: Text(
-                    '怎么？你也要买么？',
-                  ),
+                  child:Container(
+                    decoration: BoxDecoration(color: Colors.white),
+                    child: Text(
+                    '我上次买的什么手办',
+                    overflow: TextOverflow.visible,
+                  ),)
                 ),
               )
             ],
@@ -111,9 +116,11 @@ class ChatContent extends StatelessWidget{
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(8)
                   ),
-                  child: Text(
-                    '不买，我就看看',
-                  ),
+                  child:Container(
+                    decoration: BoxDecoration(color: Colors.yellow),
+                    child: Text(
+                    '我上次买的什么手办',
+                  ),)
                 ),
               ),
               CircleAvatar(
@@ -132,9 +139,11 @@ class ChatContent extends StatelessWidget{
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(8)
                   ),
-                  child: Text(
-                    '不买，我就看看',
-                  ),
+                  child:Container(
+                    decoration: BoxDecoration(color: Colors.yellow),
+                    child: Text(
+                    '我上次买的什么手办',
+                  ),)
                 ),
               ),
               CircleAvatar(
