@@ -45,7 +45,6 @@ class ChatContent extends StatelessWidget{
                     decoration: BoxDecoration(color: Colors.white),
                     child: Text(
                     '我上次买的什么手办',
-                    overflow: TextOverflow.visible,
                   ),)
                 ),
               )
