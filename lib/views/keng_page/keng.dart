@@ -11,14 +11,41 @@ class KengPage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     double deviceWidth = MediaQuery.of(context).size.width;
-    return Container(
-      width: deviceWidth,
-      decoration: BoxDecoration(
-        color: Color(0xFFF8F8F8),
-
+    return Scaffold(
+      body: kengContent(context,deviceWidth),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        child:Icon(
+          Icons.add,
+          color:Colors.white,
+        )
       ),
-      
-      child:kengContent(context,deviceWidth),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      bottomNavigationBar:BottomNavigationBar(
+        items:[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            title:Text('首页')
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            title:Text('购买')
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            title:Text('购买')
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.category),
+            title:Text('坑')
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            title:Text('我的')
+          )
+        ],
+        type:BottomNavigationBarType.fixed,
+      ),
     );
   }
 }
@@ -43,7 +70,11 @@ Widget kengContent(BuildContext context,double deviceWidth){
     //     ),
     //   );
     // }).toList();
-    return Column(
+    return Container(
+      decoration: BoxDecoration(
+        color: Color(0xFFF8F8F8),
+      ),
+      child:Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Padding(
@@ -372,6 +403,6 @@ Widget kengContent(BuildContext context,double deviceWidth){
           ],)
         ),
       ],
-    );
+    ),);
   }
 

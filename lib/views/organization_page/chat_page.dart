@@ -104,6 +104,7 @@ class ChatContent extends StatelessWidget{
           Container(child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
+              Image.asset('assets/images/sending.png',),
               Padding(padding: EdgeInsets.only(top:11,left:21,right:21,bottom:11),
                 child: Container(
                   decoration: BoxDecoration(
@@ -119,12 +120,12 @@ class ChatContent extends StatelessWidget{
                 child: Image.network('assets/images/1.jpg'),
                 radius: 39,
               ),
-              Image.asset('assets/images/sending.png',),
             ],
           ),),
           Container(child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
+              Image.asset('assets/images/fail.png',),
               Padding(padding: EdgeInsets.only(top:11,left:21,right:21,bottom:11),
                 child: Container(
                   decoration: BoxDecoration(
@@ -140,7 +141,6 @@ class ChatContent extends StatelessWidget{
                 child: Image.network('assets/images/1.jpg'),
                 radius: 39,
               ),
-              Image.asset('assets/images/fail.png',),
             ],
           ),),
         ],),),
