@@ -23,7 +23,7 @@ class ChatContent extends StatelessWidget{
             child: Text(
               '2020-2-20 17：56',
               style: TextStyle(
-                color: Color(0xFFF1F1F1),
+                color: Colors.black12,
                 fontSize: 12 
               ),
             ),
@@ -76,7 +76,7 @@ class ChatContent extends StatelessWidget{
             child: Text(
               '2020-2-20 17：56',
               style: TextStyle(
-                color: Color(0xFFF1F1F1),
+                color: Colors.black12,
                 fontSize: 12 
               ),
             ),
@@ -94,9 +94,9 @@ class ChatContent extends StatelessWidget{
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(8)
                   ),
-                  child: Text(
-                    '可以给我发几张图片么？',
-                  ),
+                  child: Image.asset(
+                    'assets/images/2.jpg',width: 100,height:100
+                  )
                 ),
               )
             ],
