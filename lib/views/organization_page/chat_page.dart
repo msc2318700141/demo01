@@ -144,6 +144,43 @@ class ChatContent extends StatelessWidget{
             ],
           ),),
         ],),),
+        Container(
+          child: Row(
+            children: <Widget>[
+              Icon(Icons.add),
+              TextFormField(
+                style: TextStyle(
+                  color: Colors.black54,
+                  fontSize: 18,
+                ),
+                cursorColor: Colors.black54,
+                decoration: InputDecoration(
+                  enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.transparent,
+                    )
+                  ),
+                  focusedBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(
+                      color:Colors.transparent,
+                    ),
+                  ),
+                  hintText: '请输入发送内容',
+                  helperStyle: TextStyle(
+                    color:Colors.black38,
+                    fontSize: 18
+                  ),
+                  prefixIcon: Icon(
+                    Icons.search,
+                    size:18,
+                    color:Colors.black54,
+                  )
+                ),
+              ),
+              Text('发送',style: TextStyle(color: Color(0XFFFFE300)),)
+            ],
+          ),
+        )
       ],),
     );
   }

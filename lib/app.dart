@@ -22,15 +22,5 @@ class AppState extends State<App>{
       //body:Organization(),
       
     );
-    // return MaterialApp(
-    //   title: 'Flutter SDK Demo',
-    //   theme: ThemeData(
-    //     textTheme: TextTheme( 
-    //         button: TextStyle(
-    //       color: Colors.white,
-    //     )),
-    //   ),
-    //   home: KengPage(),
-    // );
   }
 }
