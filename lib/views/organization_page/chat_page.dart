@@ -42,7 +42,7 @@ class ChatContent extends StatelessWidget{
                     borderRadius: BorderRadius.circular(8)
                   ),
                   child: Text(
-                    '我上次买的什么手办，可以给我发几张图片么？',
+                    '我上次买的什么手办',
                     overflow: TextOverflow.visible,
                   ),
                 ),
@@ -102,6 +102,7 @@ class ChatContent extends StatelessWidget{
             ],
           ),),
           Container(child: Row(
+            mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.end,
             children: <Widget>[
               Image.asset('assets/images/sending.jpg',),
@@ -123,7 +124,7 @@ class ChatContent extends StatelessWidget{
             ],
           ),),
           Container(child: Row(
-            crossAxisAlignment: CrossAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
               Image.asset('assets/images/fail.jpg',),
               CircleAvatar(
