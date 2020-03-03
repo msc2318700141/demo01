@@ -103,13 +103,7 @@ class ChatContent extends StatelessWidget{
           ),),
           Container(child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
-            crossAxisAlignment: CrossAxisAlignment.end,
             children: <Widget>[
-              Image.asset('assets/images/sending.jpg',),
-              CircleAvatar(
-                child: Image.network('assets/images/1.jpg'),
-                radius: 39,
-              ),
               Padding(padding: EdgeInsets.only(top:11,left:21,right:21,bottom:11),
                 child: Container(
                   decoration: BoxDecoration(
@@ -120,17 +114,17 @@ class ChatContent extends StatelessWidget{
                     '不买，我就看看',
                   ),
                 ),
-              )
+              ),
+              CircleAvatar(
+                child: Image.network('assets/images/1.jpg'),
+                radius: 39,
+              ),
+              Image.asset('assets/images/sending.jpg',),
             ],
           ),),
           Container(child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
-              Image.asset('assets/images/fail.jpg',),
-              CircleAvatar(
-                child: Image.network('assets/images/1.jpg'),
-                radius: 39,
-              ),
               Padding(padding: EdgeInsets.only(top:11,left:21,right:21,bottom:11),
                 child: Container(
                   decoration: BoxDecoration(
@@ -141,7 +135,12 @@ class ChatContent extends StatelessWidget{
                     '不买，我就看看',
                   ),
                 ),
-              )
+              ),
+              CircleAvatar(
+                child: Image.network('assets/images/1.jpg'),
+                radius: 39,
+              ),
+              Image.asset('assets/images/fail.jpg',),
             ],
           ),),
         ],),),
