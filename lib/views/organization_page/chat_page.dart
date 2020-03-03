@@ -119,7 +119,7 @@ class ChatContent extends StatelessWidget{
                 child: Image.network('assets/images/1.jpg'),
                 radius: 39,
               ),
-              Image.asset('assets/images/sending.jpg',),
+              Image.asset('assets/images/sending.png',),
             ],
           ),),
           Container(child: Row(
@@ -140,7 +140,7 @@ class ChatContent extends StatelessWidget{
                 child: Image.network('assets/images/1.jpg'),
                 radius: 39,
               ),
-              Image.asset('assets/images/fail.jpg',),
+              Image.asset('assets/images/fail.png',),
             ],
           ),),
         ],),),
